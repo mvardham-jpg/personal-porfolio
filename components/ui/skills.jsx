@@ -1,58 +1,52 @@
 import React from 'react'
-import { Code, Cpu, Globe, Terminal } from 'lucide-react'
-import { SiPython, SiRstudioide, SiTypescript, SiPytorch, SiTensorflow, SiScikitlearn, SiPandas, SiNumpy, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiHtml5, SiGit, SiGithub, SiDocker, SiLinux, SiVercel } from 'react-icons/si'
-import { IoLogoJavascript } from "react-icons/io";
-import { FaJava } from "react-icons/fa";
-import { TbSql } from "react-icons/tb";
-import { VscVscode } from "react-icons/vsc";
+import { Code, Cpu, BarChart3, Database } from 'lucide-react'
+import { SiPython, SiCplusplus, SiMysql, SiTableau, SiSimpleanalytics, SiHtml5, SiScikitlearn, SiPandas, SiNumpy, SiOpenai } from 'react-icons/si'
+import { PiMicrosoftExcelLogoFill } from "react-icons/pi";
+import { IoBarChartSharp } from "react-icons/io5";
+import { VscCode } from "react-icons/vsc";
 import LeftScroll from './leftscroll'
 
 const Skills = () => {
   const skillsData = [
   {
-    category: "Languages",
+    category: "Programming Languages",
     icon: <Code className="w-6 h-6 text-teal-400" />,
     items: [
-      { name: "Python", icon: <SiPython/> },
-      { name: "JavaScript", icon: <IoLogoJavascript /> },
-      { name: "Java", icon: <FaJava /> },
-      { name: "SQL", icon: <TbSql /> },
-      { name: "R", icon: <SiRstudioide />},
-      { name : "TypeScript", icon: <SiTypescript /> },
+      { name: "Python", icon: <SiPython/> }, // [cite: 44]
+      { name: "C++", icon: <SiCplusplus /> }, // [cite: 44]
+      { name: "C", icon: <VscCode /> }, // [cite: 44]
+      { name: "HTML", icon: <SiHtml5 /> }, // [cite: 44]
+      { name: "SQL", icon: <SiMysql /> }, // 
     ]
   },
   {
     category: "Machine Learning & AI",
     icon: <Cpu className="w-6 h-6 text-teal-400" />,
     items: [
-      { name: "PyTorch", icon: <SiPytorch /> },
-      { name: "TensorFlow", icon: <SiTensorflow /> },
-      { name: "Scikit-Learn", icon: <SiScikitlearn /> },
-      { name: "Pandas", icon: <SiPandas /> },
+      { name: "ML", icon: <SiScikitlearn /> }, // 
+      { name: "NLP", icon: <SiOpenai /> }, // 
+      { name: "Pandas", icon: <SiPandas /> }, 
       { name: "NumPy", icon: <SiNumpy /> },
+      { name: "Statistics", icon: <SiSimpleanalytics /> }, // 
     ]
   },
   {
-    category: "Web Development",
-    icon: <Globe className="w-6 h-6 text-teal-400" />,
+    category: "Analytics & Visualization",
+    icon: <BarChart3 className="w-6 h-6 text-teal-400" />,
     items: [
-      { name: "React", icon: <SiReact /> },
-      { name: "Next.js", icon: <SiNextdotjs /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-      { name: "Node.js", icon: <SiNodedotjs /> },
-      { name: "HTML5", icon: <SiHtml5 /> },
+      { name: "Power BI", icon: <IoBarChartSharp /> }, // 
+      { name: "Tableau", icon: <SiTableau /> }, // 
+      { name: "Excel", icon: <PiMicrosoftExcelLogoFill /> }, // 
+      { name: "SPSS", icon: <SiSimpleanalytics /> }, // 
     ]
   },
   {
-    category: "Tools & DevOps",
-    icon: <Terminal className="w-6 h-6 text-teal-400" />,
+    category: "Economics & Business",
+    icon: <Database className="w-6 h-6 text-teal-400" />,
     items: [
-      { name: "Git", icon: <SiGit /> },
-      { name: "GitHub", icon: <SiGithub /> },
-      { name: "Docker", icon: <SiDocker /> },
-      { name: "Linux", icon: <SiLinux /> },
-      { name: "VS Code", icon: <VscVscode /> },
-      { name: "Vercel", icon: <SiVercel /> },
+      { name: "Econometrics", icon: <SiSimpleanalytics /> }, // 
+      { name: "MySQL", icon: <SiMysql /> }, // 
+      { name: "Quant Methods", icon: <BarChart3 /> }, // 
     ]
   }
 ];
@@ -95,7 +89,7 @@ const Skills = () => {
           <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
         </span>
         <p className="text-xs font-medium text-teal-200 tracking-wide">
-          CURRENTLY LEARNING: <span className="text-white">NLP and Language Modelling</span>
+          <span className="text-white">Prev AI/ML Engineering Intern @ IQVIA | MSBA @ UCI</span>
         </p>
 </div>
     </div>

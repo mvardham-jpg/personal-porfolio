@@ -49,7 +49,7 @@ export default function Contact() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4 p-3 rounded-xl hover:bg-neutral-800 transition">
               <Mail className="w-6 h-6 text-teal-400 flex-shrink-0" />
-              <span className="text-gray-300 break-all">charan.vardham@gmail.com</span>
+              <span className="text-gray-300 break-all">manasvivardham8@gmail.com</span>
             </div>
 
             <div className="flex items-center gap-4 p-3 rounded-xl hover:bg-neutral-800 transition">
@@ -61,13 +61,13 @@ export default function Contact() {
           <div className="mt-10 pt-6 border-t border-neutral-800">
             <p className="text-xs tracking-widest text-gray-500 mb-4">FIND ME ONLINE</p>
             <div className="flex gap-4">
-              <a href="https://github.com/Charan6924" target="_blank" className="group p-4 rounded-2xl bg-neutral-800 hover:bg-neutral-700 transition">
+              <a href="https://github.com/mvardham-jpg" target="_blank" className="group p-4 rounded-2xl bg-neutral-800 hover:bg-neutral-700 transition">
                 <Github className="w-5 h-5 text-gray-300 group-hover:text-white" />
               </a>
-              <a href="https://www.linkedin.com/in/charan-vardham-3bb187312/" target="_blank" className="group p-4 rounded-2xl bg-neutral-800 hover:bg-neutral-700 transition">
+              <a href="https://www.linkedin.com/in/manasvi-vardham/" target="_blank" className="group p-4 rounded-2xl bg-neutral-800 hover:bg-neutral-700 transition">
                 <Linkedin className="w-5 h-5 text-gray-300 group-hover:text-white" />
               </a>
-              <a href="https://x.com/cboyxxxx" target="_blank" className="group p-4 rounded-2xl bg-neutral-800 hover:bg-neutral-700 transition">
+              <a href="https://x.com/manasvivardham" target="_blank" className="group p-4 rounded-2xl bg-neutral-800 hover:bg-neutral-700 transition">
                 <Twitter className="w-5 h-5 text-gray-300 group-hover:text-white" />
               </a>
             </div>

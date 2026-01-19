@@ -50,15 +50,15 @@ const Home = () => {
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <Link 
-                href="https://github.com/Charan6924/Resume/blob/main/Charan_Vardham_2028.pdf"
+                href="https://github.com/mvardham-jpg/Resume/blob/main/Vardham_Manasvi_Resume.pdf"
                 className="inline-flex items-center gap-2 border border-white text-white py-3 px-8 rounded-xl transition-all hover:bg-white hover:text-black hover:scale-105 font-mono text-lg"
-                target="_blank"
+                target="_blank" 
             >
                 View Resume <ArrowRight size={20} />
             </Link>
             
             <Link 
-                href="mailto:your.email@example.com" 
+                href="manasvivardha8@gmail.com" 
                 className="flex items-center gap-2 text-gray-500 hover:text-teal-400 transition-colors font-mono text-sm group px-2 py-2">
                 <Mail size={16} className="group-hover:animate-bounce" />
                 <span>or email me directly</span>

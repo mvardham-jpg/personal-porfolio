@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 const RightSocials = () => {
     const socialLinks = [
-    { icon: <Github size={20} />, href: 'https://github.com/charan6924', label: 'GitHub' },
-    { icon: <Linkedin size={20} />, href: 'https://linkedin.com/in/charan-vardham-3bb187312/', label: 'LinkedIn' },
-    { icon: <Twitter size={20} />, href: 'https://x.com/cboyxxxx', label: 'Twitter' },
-    { icon: <Mail size={20} />, href: 'mailto:charan.vardham@gmail.com', label: 'Email' },
+    { icon: <Github size={20} />, href: 'https://github.com/mvardham-jpg', label: 'GitHub' },
+    { icon: <Linkedin size={20} />, href: 'https://www.linkedin.com/in/manasvi-vardham/', label: 'LinkedIn' },
+    { icon: <Twitter size={20} />, href: 'https://x.com/manasvivardham', label: 'Twitter' },
+    { icon: <Mail size={20} />, href: 'mailto:manasvivardham8@gmail.com', label: 'Email' },
   ];
   return (
     <div className="absolute bottom-10 left-12 hidden lg:flex flex-col items-center gap-6 z-30">

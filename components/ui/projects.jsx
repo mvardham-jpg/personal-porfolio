@@ -1,11 +1,8 @@
 import React from 'react'
 import LeftScroll from './leftscroll' 
-import { GiCycle, GiArtificialIntelligence } from "react-icons/gi";
-import { SiPytorch, SiPython, SiPandas, SiNumpy, SiFastapi, SiMongodb, SiNextdotjs, SiTailwindcss, SiTypescript, SiNodedotjs, SiDocker } from "react-icons/si";
-import { TiWeatherCloudy } from "react-icons/ti";
-import { PiWaveSineFill } from "react-icons/pi";
-import { SiLangchain } from "react-icons/si";
-import { SiOpenai } from "react-icons/si";
+import { GiCycle, GiArtificialIntelligence, GiAtom } from "react-icons/gi";
+import { SiPytorch, SiPython, SiPandas, SiNumpy, SiFastapi, SiMongodb, SiNextdotjs, SiTailwindcss, SiScikitlearn, SiOpenai, SiSimpleanalytics } from "react-icons/si";
+import { MdOutlineAnalytics, MdFlightTakeoff, MdBarChart } from "react-icons/md";
 import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
@@ -18,21 +15,17 @@ const Projects = () => {
       <h1 className='text-4xl md:text-6xl font-bold text-left mb-4 text-white'>My Projects</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 w-full pb-20'>
 
-        <a className='relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6 h-full'
-          href='https://github.com/Charan6924/ShakespeareGPT'
-          target='_blank'>
-            <div className='absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-            <ExternalLink className='w-5 h-5 text-teal-400' />
-          </div>
+        {/* Neutrino Energy Prediction Project */}
+        <div className='relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6 h-full'>
           <div className='mb-4'>
             <h2 className='text-2xl font-bold text-white flex items-center gap-3'>
-              <GiCycle className="w-8 h-8 text-teal-400 flex-shrink-0"/> 
-              ShakespeareGPT
+              <GiAtom className="w-8 h-8 text-teal-400 flex-shrink-0"/> 
+              Neutrino Prediction
             </h2>
           </div>
           <div className='flex-grow'>
             <p className='text-gray-400 mb-6 leading-relaxed'>
-              Implemented a generative pretrained transformer (GPT) model using PyTorch that is trained on the life works of Shakespeare. 
+              Developed a simulation framework evaluating energy prediction accuracy across thousands of neutrino observations using statistical modeling.
             </p>
           </div>
           
@@ -40,10 +33,6 @@ const Projects = () => {
             <div className='flex flex-col items-center gap-2'>
               <SiPython className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
               <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Python</span>
-            </div>
-            <div className='flex flex-col items-center gap-2'>
-              <SiPytorch className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Pytorch</span>
             </div>
             <div className='flex flex-col items-center gap-2'>
               <SiPandas className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
@@ -54,23 +43,19 @@ const Projects = () => {
               <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Numpy</span>
             </div>
           </div>
-        </a>
+        </div>
       
-        <a className='relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6 h-full'
-        href='https://github.com/Charan6924/RAG'
-        target='_blank'>
-          <div className='absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-            <ExternalLink className='w-5 h-5 text-teal-400' />
-          </div>
+        {/* IQVIA Disease Detection Chatbot */}
+        <div className='relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6 h-full'>
           <div className='mb-4'>
             <h2 className='text-2xl font-bold text-white flex items-center gap-3'>
-              <GiArtificialIntelligence className="w-8 h-8 text-teal-400 flex-shrink-0"/>
-              RAG Chatbot
+              <SiOpenai className="w-8 h-8 text-teal-400 flex-shrink-0"/>
+              Disease Detection AI
             </h2>
           </div>
           <div className='flex-grow'>
             <p className='text-gray-400 mb-6 leading-relaxed'>
-              A Retrieval-Augmented Generation (RAG) Chatbot. It uses a FastAPI backend, a MongoDB-integrated chat history, and a Next.js frontend styled using TailwindCSS.
+              Built a 99% accurate GPT-4 chatbot and automated transcript analysis, reducing manual labor by 43%.
             </p>
           </div>
           
@@ -80,97 +65,70 @@ const Projects = () => {
               <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Python</span>
             </div>
             <div className='flex flex-col items-center gap-2'>
-              <SiFastapi className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>FastAPI</span>
+              <SiOpenai className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
+              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>GPT-4</span>
             </div>
              <div className='flex flex-col items-center gap-2'>
-              <SiNextdotjs className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Next.JS</span>
-            </div>
-            <div className='flex flex-col items-center gap-2'>
-              <SiMongodb className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>MongoDB</span>
-            </div>
-            <div className='flex flex-col items-center gap-2'>
-              <SiLangchain className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>LangChain</span>
+              <GiArtificialIntelligence className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
+              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>NLP</span>
             </div>
           </div>
-        </a>
+        </div>
 
-        <a className='relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6 h-full'
-          href='https://github.com/Charan6924/SpectrumToKernel'
-          target='_blank'>
-            <div className='absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-            <ExternalLink className='w-5 h-5 text-teal-400' />
-          </div>
+        {/* Sun Country Airline Segmentation */}
+        <div className='relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6 h-full'>
           <div className='mb-4'>
             <h2 className='text-2xl font-bold text-white flex items-center gap-3'>
-              <PiWaveSineFill className='h-8 w-8 text-teal-400 flex-shrink-0'/>
-              Spectrum To Kernel
+              <MdFlightTakeoff className="w-8 h-8 text-teal-400 flex-shrink-0"/>
+              Airline Segmentation
             </h2>
           </div>
           <div className='flex-grow'>
             <p className='text-gray-400 mb-6 leading-relaxed'>
-              Developed a deep learning model that identifies the reconstruction kernel of a CT image and transforms it into an image generated with a different kernel.
+              Applied K-Means clustering on 90+ booking features to segment airline customers and generate targeted marketing strategies.
             </p>
           </div>
-           <div className='flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-neutral-800'>
+          
+          <div className='flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-neutral-800'>
             <div className='flex flex-col items-center gap-2'>
               <SiPython className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
               <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Python</span>
             </div>
             <div className='flex flex-col items-center gap-2'>
-              <SiPytorch className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Pytorch</span>
+              <SiScikitlearn className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
+              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Scikit-Learn</span>
             </div>
-            <div className='flex flex-col items-center gap-2'>
-              <SiPandas className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Pandas</span>
-            </div>
-            <div className='flex flex-col items-center gap-2'>
-              <SiNumpy className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Numpy</span>
+             <div className='flex flex-col items-center gap-2'>
+              <MdOutlineAnalytics className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
+              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Clustering</span>
             </div>
           </div>
-        </a>
+        </div>
 
-        <a className='relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6 h-full'
-        target='_blank'
-          href='https://github.com/Charan6924/SuperResolution'>
-            <div className='absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-            <ExternalLink className='w-5 h-5 text-teal-400' />
-          </div>
+        {/* NSSE Dashboard Project */}
+        <div className='relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6 h-full'>
           <div className='mb-4'>
             <h2 className='text-2xl font-bold text-white flex items-center gap-3'>
-              <TiWeatherCloudy className='w-8 h-8 text-teal-400 flex-shrink-0'/>
-              ESRGAN Super-Resolution
+              <SiSimpleanalytics className='w-8 h-8 text-teal-400 flex-shrink-0'/>
+              Institutional Dashboard
             </h2>
           </div>
           <div className='flex-grow'>
             <p className='text-gray-400 mb-6 leading-relaxed'>
-              SRGAN-based super-resolution model for upscaling 64×64 images to 125×125 with perceptual quality optimization using adversarial training
+              Engineered a Power BI dashboard transforming survey data into actionable visualizations for university administrative decision-making.
             </p>
           </div>
            <div className='flex flex-wrap items-center gap-4 sm:gap-6 pt-4 border-t border-neutral-800'>
             <div className='flex flex-col items-center gap-2'>
-              <SiPython className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Python</span>
+              <SiSimpleanalytics className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
+              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Analysis</span>
             </div>
             <div className='flex flex-col items-center gap-2'>
-              <SiPytorch className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Pytorch</span>
-            </div>
-            <div className='flex flex-col items-center gap-2'>
-              <SiPandas className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Pandas</span>
-            </div>
-            <div className='flex flex-col items-center gap-2'>
-              <SiNumpy className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
-              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Numpy</span>
+              <MdBarChart className='text-2xl text-gray-500 group-hover:text-teal-400 transition-colors'/>
+              <span className='text-[10px] uppercase tracking-wider text-gray-500 font-medium group-hover:text-gray-300'>Visualization</span>
             </div>
           </div>
-        </a>
+        </div>
 
       </div>
     </div>

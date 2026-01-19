@@ -38,9 +38,10 @@ const Navbar = () => {
                     <img src='/C_logo.png' alt='Logo' className='h-8 md:h-10 scale-[1.5] md:scale-[1.8] w-auto transition-transform hover:scale-[1.6] md:hover:scale-[1.9]' />
                 </Link>
                 
-                {/* DESKTOP MENU (Hidden on Mobile) */}
+                {/* DESKTOP MENU (Updated with Experience) */}
                 <div className='hidden md:flex flex-grow justify-center gap-8 text-xl font-semibold'>
                     <Link href="#home" className="hover:text-teal-400 transition-colors">Home</Link>
+                    <Link href="#experience" className="hover:text-teal-400 transition-colors">Experience</Link>
                     <Link href="#skills" className="hover:text-teal-400 transition-colors">Skills</Link>
                     <Link href="#projects" className="hover:text-teal-400 transition-colors">Projects</Link>
                     <Link href="#contact" className="hover:text-teal-400 transition-colors">Contact</Link>
@@ -55,7 +56,7 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* MOBILE MENU DROPDOWN */}
+            {/* MOBILE MENU DROPDOWN (Updated with Experience) */}
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-neutral-800 border-t border-neutral-700 absolute w-full">
                     <div className="flex flex-col items-center gap-6 py-8 text-xl font-semibold">
@@ -65,6 +66,13 @@ const Navbar = () => {
                             className="hover:text-teal-400 transition-colors"
                         >
                             Home
+                        </Link>
+                        <Link 
+                            href="#experience" 
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="hover:text-teal-400 transition-colors"
+                        >
+                            Experience
                         </Link>
                         <Link 
                             href="#skills" 

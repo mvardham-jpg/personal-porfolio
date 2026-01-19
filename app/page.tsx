@@ -5,12 +5,14 @@ import Skills from '@/components/ui/skills'
 import Projects from '@/components/ui/projects'
 import Footer from '@/components/ui/footer'
 import Contact from '@/components/ui/contact'
+import Experience from '@/components/ui/Experience'
 
 const page = () => {
   return (
     <div className='bg-neutral-800 text-white '>
         <Navbar/>
         <section id = 'home' className='scroll-mt-24'><Home/></section>
+        <section id='experience' className='scroll-mt-24'><Experience/></section>
         <section id = 'skills' className='scroll-mt-24'><Skills/></section>
         <section id = 'projects' className='scroll-mt-24'><Projects/></section>
         <section id = 'contact' className='scroll-mt-24'><Contact/></section>
