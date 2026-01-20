@@ -9,11 +9,10 @@ import {
   SiHtml5,
   SiPandas,
   SiNumpy,
+  SiRstudio,
 } from 'react-icons/si'
 import { PiMicrosoftExcelLogoFill } from 'react-icons/pi'
 import { IoBarChartSharp } from 'react-icons/io5'
-import { VscCode } from 'react-icons/vsc'
-import { SiRstudio } from 'react-icons/si'
 import LeftScroll from './leftscroll'
 
 const Skills = () => {
@@ -47,7 +46,7 @@ const Skills = () => {
         { name: "Power BI", icon: <IoBarChartSharp /> },
         { name: "Tableau", icon: <SiTableau /> },
         { name: "Excel", icon: <PiMicrosoftExcelLogoFill /> },
-        { name: "Dashboard Design", icon: <BarChart3 /> },
+        { name: "Dashboard Design", icon: <BarChart3 className="w-6 h-6" /> },
         { name: "KPI Tracking", icon: <SiSimpleanalytics /> },
       ],
     },
@@ -90,10 +89,7 @@ const Skills = () => {
 
               <div className="flex flex-wrap gap-6 mt-2">
                 {skillCategory.items.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="group flex flex-col items-center gap-3"
-                  >
+                  <div key={idx} className="group flex flex-col items-center gap-3">
                     <div className="text-2xl text-gray-400 group-hover:text-teal-400 transition-colors transform group-hover:scale-110 duration-200">
                       {item.icon}
                     </div>
@@ -103,6 +99,7 @@ const Skills = () => {
                   </div>
                 ))}
               </div>
+
             </div>
           </div>
         ))}
@@ -124,3 +121,4 @@ const Skills = () => {
 }
 
 export default Skills
+
