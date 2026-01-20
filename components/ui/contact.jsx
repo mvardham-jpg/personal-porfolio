@@ -54,7 +54,7 @@ export default function Contact() {
 
             <div className="flex items-center gap-4 p-3 rounded-xl hover:bg-neutral-800 transition">
               <MapPin className="w-6 h-6 text-teal-400 flex-shrink-0" />
-              <span className="text-gray-300">Cleveland, OH</span>
+              <span className="text-gray-300">Irvine, California</span>
             </div>
           </div>
 
