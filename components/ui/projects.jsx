@@ -1,4 +1,5 @@
 import React from "react"
+import { ExternalLink } from 'lucide-react';
 import LeftScroll from "./leftscroll"
 import { GiArtificialIntelligence, GiAtom } from "react-icons/gi"
 import {
@@ -60,21 +61,25 @@ const Projects = () => {
         </div>
 
         {/* Airline Segmentation */}
-        <div className="group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6">
-          <h2 className="text-2xl font-bold text-white flex items-center gap-3 mb-3">
-            <MdFlightTakeoff className="w-8 h-8 text-teal-400" />
-            Customer Segmentation
-          </h2>
-          <p className="text-gray-400 mb-6">
-            Cleaned booking data and clustered customers into groups based on travel behavior, then summarized each segment to support targeting decisions.
-          </p>
+        <a className="relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6" href="https://github.com/mvardham-jpg/Clustering-Project" target="_blank">
+  <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <ExternalLink className="w-5 h-5 text-teal-400" />
+  </div>
+  
+  <h2 className="text-2xl font-bold text-white flex items-center gap-3 mb-3">
+    <MdFlightTakeoff className="w-8 h-8 text-teal-400" />
+    Customer Segmentation
+  </h2>
+  <p className="text-gray-400 mb-6">
+    Cleaned booking data and clustered customers into groups based on travel behavior, then summarized each segment to support targeting decisions.
+  </p>
 
-          <div className="flex gap-6 border-t border-neutral-800 pt-4">
-            <Icon label="Python"><SiPython /></Icon>
-            <Icon label="Scikit Learn"><SiScikitlearn /></Icon>
-            <Icon label="Clustering"><MdOutlineAnalytics /></Icon>
-          </div>
-        </div>
+  <div className="flex gap-6 border-t border-neutral-800 pt-4">
+    <Icon label="Python"><SiPython /></Icon>
+    <Icon label="Scikit Learn"><SiScikitlearn /></Icon>
+    <Icon label="Clustering"><MdOutlineAnalytics /></Icon>
+  </div>
+</a>
 
         {/* Institutional Dashboard */}
         <div className="group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6">
