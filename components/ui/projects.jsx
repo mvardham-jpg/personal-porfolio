@@ -81,21 +81,23 @@ const Projects = () => {
   </div>
 </a>
 
-        {/* Institutional Dashboard */}
-        <div className="group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6">
+        {/* Financial RAG */}
+        <a className = "relative group bg-neutral-900 flex flex-col border border-neutral-700 rounded-xl hover:border-teal-400 transition-colors p-6" href = 'https://github.com/mvardham-jpg/NLP-Financial-News-Semantic-Search' target="_blank">
+          <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <ExternalLink className="w-5 h-5 text-teal-400" />
+          </div>
           <h2 className="text-2xl font-bold text-white flex items-center gap-3 mb-3">
             <SiSimpleanalytics className="w-8 h-8 text-teal-400" />
-            KPI Dashboard
+            Financial News Semantic Search
           </h2>
           <p className="text-gray-400 mb-6">
-            Built a Power BI dashboard to track key survey metrics, highlight trends over time, and help leadership quickly spot areas needing action.
+            A semantic search and RAG-based system that analyzes 1,600+ financial news articles using embeddings and an LLM to deliver accurate, context-aware answers via CLI and Streamlit.
           </p>
-
           <div className="flex gap-6 border-t border-neutral-800 pt-4">
             <Icon label="Analysis"><SiSimpleanalytics /></Icon>
             <Icon label="Visualization"><MdBarChart /></Icon>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
